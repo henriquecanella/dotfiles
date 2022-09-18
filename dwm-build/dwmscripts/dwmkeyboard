@@ -1,0 +1,6 @@
+#!/bin/sh 
+
+keyboard="$(setxkbmap -print | awk -F"+" '/xkb_symbols/ {print $2}')"
+icon=""
+
+printf "^b#9d0006^ %s %s \n" "$icon" "$keyboard"

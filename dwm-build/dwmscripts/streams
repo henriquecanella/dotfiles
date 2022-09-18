@@ -1,0 +1,5 @@
+#!/bin/sh
+
+channel=$(echo "$(cat ~/.config/dwm-build/dwmscripts/lives)" | dmenu -h 36 -fn mononoki -nb "#282828" -nf "#bdae93" -sb "#cc241d" -sf "#ebdbb2" -i -l 15)
+
+streamlink -p mpv "https://twitch.tv/"$channel best

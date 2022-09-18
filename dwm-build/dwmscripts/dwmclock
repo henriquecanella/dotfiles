@@ -1,0 +1,5 @@
+#!/bin/sh 
+
+dte="$(date +" %b %d %l:%M%p"| sed 's/  / /g')"
+printf "^b#076678^%s \n" "$dte" 
+

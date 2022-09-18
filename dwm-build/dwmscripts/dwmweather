@@ -1,0 +1,5 @@
+#!/bin/bash
+weather=$(curl -s wttr.in/Tupa?format=%t)
+icon=""
+printf "^b#b57614^ %s %s \n" "$icon" "$weather"
+

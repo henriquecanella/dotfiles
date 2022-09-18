@@ -1,0 +1,6 @@
+#!/bin/sh 
+
+mem="$(free -m | awk 'NR==2{printf "%sMB\n", $3}')"
+icon=""
+printf "^b#427b58^ %s %s \\n" "$icon" "$mem"
+
